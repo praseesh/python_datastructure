@@ -1,0 +1,14 @@
+def change():
+    print(f"Tuple Modified Successfully\n{tup2}")
+
+tup = (1,2,3,4,5,6,7,8,9,10)
+print(f"\nTuple is: \n\n{tup}\n")
+list1 = []
+list1= list(tup)
+for i in range(10):
+    if list1[i]==list1[4]:
+        list1[i] = 22
+tup2 = ()
+tup2 = tuple(list1)
+change()
+
