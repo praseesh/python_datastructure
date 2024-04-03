@@ -1,12 +1,12 @@
-# def outer(x):
-#     def inner():
-#         return x 
-#     return inner
+def outer(x):
+    def inner():
+        return x 
+    return inner
 
-# add_five = outer(5,8)
-# print(add_five)
-# res = add_five(6)
-# print(res)
+add_five = outer(5,8)
+print(add_five)
+res = add_five(6)
+print(res)
 
 # def dec():
 #     return "this is a decorator"
