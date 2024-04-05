@@ -65,3 +65,4 @@ print("After pop:", my_list, "(Popped Item:", popped_item, ")")
 
 count_of_1 = my_list.count(1)
 print("Count of 1:", count_of_1)
+
