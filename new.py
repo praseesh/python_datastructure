@@ -11,4 +11,4 @@
 # print(list1)
 
 
-for i in range
+# for i in range
