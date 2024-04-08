@@ -20,7 +20,6 @@ class Dog(Pets):
     def make_sound(self):
         print("Bark")
 
-
 cat1 = Cat("Kitty", 2.5)
 dog1 = Dog("Fluffy", 4)
 
