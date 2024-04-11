@@ -22,10 +22,10 @@
 
 # FromKeys()
 
-# list1 = ("name", "age", "city")
+list1 = ("name", "age", "city")
 # values = "unknown"
-# new_dict = dict.fromkeys("list1")
-# print(new_dict)
+new_dict = dict.fromkeys(list1)
+print(new_dict)
 
 # Get()
 
@@ -42,10 +42,10 @@
 
 # Items()
 
-# my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
+my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
 # items = my_dict.items()
-# for key, value in items:
-#     print(f"Key: {key}, Value: {value}")
+for key, value in my_dict.items():
+    print(f"Key: {key}, Value: {value}")
 
 # Keys()
 

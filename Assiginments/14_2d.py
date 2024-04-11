@@ -15,7 +15,6 @@ for i in range(n):
         row.append(values)
     array2.append(row)
 
-
 sum = []
 for i in range(n):
     row2 = []

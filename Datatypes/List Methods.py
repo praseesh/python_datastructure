@@ -4,7 +4,7 @@
 # my_list.append(6)
 # print(my_list)
 
-# # Append a List
+# Append a List
 # words = ["hello", "world", "python"]
 # my_list.append(words)
 
