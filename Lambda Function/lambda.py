@@ -1,3 +1,4 @@
-a = lambda x: x*x
 
-print(f"lambda Square function {a(5)}")
+x = 2
+a = lambda x: x*x
+print(f"lambda Square function {a()}")

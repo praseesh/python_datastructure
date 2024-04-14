@@ -6,3 +6,7 @@ x = square_list()
 
 for i in x:
     print(i)
+# print(next(x))
+# print(next(x))
+# print(next(x))
+# print(next(x))
