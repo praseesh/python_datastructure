@@ -1,12 +1,12 @@
-def upper_case(functio):
+def upper_case(func):
     def inner(y):
-        result = x(y)
+        result = func(y)
         return result.upper()
     return inner
 
 @upper_case
-def hello():
-    return "hello" + name
+def hello(name):
+    return "hello" +" " + name
     
 
-    hello("praseesh")
+print(hello("praseesh"))
