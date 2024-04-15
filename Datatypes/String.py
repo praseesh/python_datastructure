@@ -17,3 +17,12 @@ a = "Hello"
 b = "World"
 c = a + b
 print(c)
+
+# Display the price with 2 decimals:
+
+price = 59
+txt = f"The price is {price:.2f} dollars"
+print(txt)
+
+txt = f"The price is {20 * 5} dollars"
+print(txt)
