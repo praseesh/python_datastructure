@@ -22,7 +22,7 @@ class Car(Vehicle):
         
     def display(self):
         print(f"Company: {self.company}\nModel: {self.model}\nColor: {self.color}\nEngine: {self.engine}")
-        
+        # print("ho")
         
 car1 = Car("Audi", "Q7", "Black", "Petrol","Metalic")
 car1.display()
