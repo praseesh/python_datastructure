@@ -7,6 +7,9 @@
 # print(a.name)
 # print(a.age)
 
+
+
+# # ---------------------------------------------------------------------------------------------------------------------
 # class A():
 #     def name(self,name):
 #         self.name = name
@@ -21,31 +24,44 @@
         
 # obj = C()
 
+#------------------------------------------------------------------------------------------------------------------------
 
-
-# def sum():
-#     for i in range(5):
-#         yield i
+def sum():
+    for i in range(5):
+        print(i)
+    return i
         
-# a = sum()
+a = sum()
+print(a)
+# print(next(a))
+# print(next(a))
+# print(next(a))
 # print(next(a))
 
 # for i in a:
 #     print(i)
 
-class A:
+# def sum1 ():
+
+#     for i in range(5):
+        
+#         return i
     
-    def __init__(self):
-        self.name = b
-        self.age = 20
-        print(b)
-    def display(self):
-        print("display1")
+# print(sum1())
+
+# class A:
+    
+#     def __init__(self):
+#         self.name = b
+#         self.age = 20
+#         print(b)
+#     def display(self):
+#         print("display1")
         
             
-b = 2
-c = 4
-a =A()
-a1 =A()
-print(a.age)
-a.display()
+# b = 2
+# c = 4
+# a =A()
+# a1 =A()
+# print(a.age)
+# a.display()
