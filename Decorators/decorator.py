@@ -9,5 +9,6 @@ def my_decorator(func):
 def say_hello():
     print("Hello!")
 
+
 # Calling the decorated function
 say_hello()
