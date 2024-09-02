@@ -1,6 +1,6 @@
-# list1 = []
-# list1 = [input() for i in range(5)]
-# print(list1)
+list1 = []
+list1 = [input() for i in range(5)]
+print(list1)
 
 
 list2 = []
