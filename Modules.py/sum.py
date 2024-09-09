@@ -9,8 +9,6 @@
 
 from sum_sample import sum, multi
 
-# s = multi(4,5,6)
-# print(s)
 s = sum(5,5)
 print(s)
 f = multi(6,6,6,)
