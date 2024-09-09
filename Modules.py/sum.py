@@ -8,7 +8,6 @@
 # print(find_sum(5,3))
 
 from sum_sample import sum, multi
-
 s = sum(5,5)
 print(s)
 f = multi(6,6,6,)
