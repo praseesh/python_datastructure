@@ -38,7 +38,5 @@ def deco(func):
 def check():
     print("hello")
     return "this is check"
-
-# Now, when you call check(), it will be decorated by dec
 print(check())
 
