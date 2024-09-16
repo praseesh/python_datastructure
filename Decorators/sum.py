@@ -9,7 +9,6 @@ res = add_five(6)
 print(res)
 def dec():
      return "this is a decorator"
-
 @dec
 def check():
     return "this is check"
