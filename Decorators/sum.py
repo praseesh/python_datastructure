@@ -22,7 +22,6 @@ def dec(func):
     print(wrapper)
     return wrapper
 
-
 def deco(func):
     def wrapper():
         print("Before calling the 2nd function")
