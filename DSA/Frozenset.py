@@ -1,4 +1,3 @@
-# Same as {"a", "b","c"}
 normal_set = set(["a", "b","c"])
 
 print("Normal Set")
