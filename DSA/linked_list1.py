@@ -34,7 +34,28 @@ class LinkedList:
         
         previous.next = temp.next
     
-
+    def insert(self, value, position):
+        new_node = Node(value)
+        if position == 0:
+            new_node.next = self.head
+            self.head = new_node
+            return
+        current = self.head
+        previous = None
+        count = 0
+        
+        while current is not None and count < position:
+            previous = current
+            current = current.next
+            count += 1
+            
+        print("Count::::::::  ",count)  
+        if previous is None:
+            print("Data is not found in the list")
+            
+        new_node.next = previous.next
+        previous.next = new_node
+        
     def print(self):
         current_node = self.head
         while current_node:
@@ -48,10 +69,15 @@ linked_list.append("1")
 linked_list.append("2")
 linked_list.append("3")
 linked_list.append("4")
+linked_list.append("5")
+linked_list.append("6")
 linked_list.append("Last Linked list")
 
-linked_list.print()
+# linked_list.print()
 
-linked_list.delete("4")
+# linked_list.delete("4")
 
+# linked_list.print()
+
+linked_list.insert(10,11)
 linked_list.print()
