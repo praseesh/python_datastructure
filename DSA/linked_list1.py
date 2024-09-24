@@ -17,7 +17,24 @@ class LinkedList:
             last_node = last_node.next
         last_node.next = new_node
         
+    def delete(self, data):
+        temp = self.head
+        previous = None
         
+        if temp is not None and temp.data == data:
+            self.head =temp.next
+            return
+        while temp is not None and temp.data != data:
+            previous = temp
+            temp = temp.next
+            
+        if temp is None:
+            print("Data is not found in the list")
+            return
+        
+        previous.next = temp.next
+    
+
     def print(self):
         current_node = self.head
         while current_node:
@@ -32,5 +49,9 @@ linked_list.append("2")
 linked_list.append("3")
 linked_list.append("4")
 linked_list.append("Last Linked list")
+
+linked_list.print()
+
+linked_list.delete("4")
 
 linked_list.print()
