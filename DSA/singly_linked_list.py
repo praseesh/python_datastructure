@@ -49,7 +49,7 @@ class LinkedList:
             current = current.next
             count += 1
             
-        print("Count::::::::  ",count)  
+        print("Count:  ",count)  
         if previous is None:
             print("Data is not found in the list")
             
