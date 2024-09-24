@@ -28,6 +28,12 @@ class LinkedList:
             print(f"Data: {temp.data}, Previous: {str(temp.prev) if temp.prev else None}, Next: {str(temp.next) if temp.next else None}", end=" → \n" if temp.next else "\n")
             temp = temp.next
             
+    def print_reverse(self):
+        temp = self.tail
+        while temp is not None:
+            print(f"Data: {temp.data}", end=" → \n")
+            temp = temp.prev        
+            
 linked_list = LinkedList()
 linked_list.append("1")
 linked_list.append("2")
@@ -36,4 +42,5 @@ linked_list.append("4")
 linked_list.append("5")
 linked_list.append("6")
 
-linked_list.print()
+# linked_list.print()
+linked_list.print_reverse()
