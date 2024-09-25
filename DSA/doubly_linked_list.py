@@ -64,8 +64,18 @@ class LinkedList:
         current.next.prev = new_node
         current.next = new_node
             
-
-        
+    def remove_duplicates(self):
+        current = self.head
+        while current is not None:
+            next = current.next
+            while  next is not None and next.data == current.data:
+                next = next.next
+            current.next = next
+            if next == self.tail:
+                tail = current
+            current = next
+         
+         
     def print(self):
         temp = self.head
         while temp:
@@ -84,15 +94,19 @@ linked_list = LinkedList()
 linked_list.append("1")
 linked_list.append("2")
 linked_list.append("3")
+linked_list.append("3")
+linked_list.append("3")
 linked_list.append("4")
+linked_list.append("5")
+linked_list.append("5")
 linked_list.append("5")
 linked_list.append("6")
 
-linked_list.modify(10,3)
-linked_list.print()
+# linked_list.modify(10,3)
+# linked_list.print()
 # linked_list.print_reverse()
 
-linked_list.insert(22,4)
-
-# linked_list.print()
-linked_list.print_reverse()
+# linked_list.insert(22,4)
+# linked_list.remove_duplicates()
+linked_list.print()
+# linked_list.print_reverse()
