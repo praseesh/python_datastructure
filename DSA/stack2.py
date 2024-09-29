@@ -1,4 +1,4 @@
-stack = []# element in the stack
+stack = []
 stack.append('a')
 stack.append('b')
 stack.append('c')
