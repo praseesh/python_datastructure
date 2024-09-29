@@ -1,6 +1,3 @@
-# Python program to
-# demonstrate stack implementation
-# using list
 
 stack = []
 
