@@ -6,7 +6,6 @@ stack.append('c')
 print('Initial stack')
 print(stack)
 
-# pop() function to pop
 # element from stack in
 # LIFO order
 print('\nElements popped from stack:')
