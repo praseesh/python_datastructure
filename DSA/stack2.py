@@ -1,4 +1,3 @@
-
 stack = []
 
 # append() function to push
