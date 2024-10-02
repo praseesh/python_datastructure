@@ -34,6 +34,14 @@ class BinarySearchTree:
         self.pre_order_traversal(root.left)
         self.pre_order_traversal(root.right)
         
+    def in_order_helper(self, node):
+        if node is not None:
+            self.in_order_helper(node.left)
+            print(node.data, end=" ->  ")
+            self.in_order_helper(node.right)
+    def in_order(self):
+        self.in_order_helper(self.root)
+        
                     
     def contains(self,data):
         current_node = self.root
@@ -91,7 +99,9 @@ bst.insert(6)
 bst.insert(7)
 
 bst.remove(bst.root,6)
-print(bst.contains(6))
+# print(bst.contains(6))
 # print(bst.contains(25))
 
-bst.pre_order_traversal(bst.root)
+bst.in_order()
+
+# bst.pre_order_traversal(bst.root)
