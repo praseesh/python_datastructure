@@ -52,7 +52,33 @@ class BinarySearchTree:
         while current_node.left is not None:
             current_node = current_node.left
         return current_node 
-    
+    def remove(self,node, data):
+        if not node:
+            return None
+        if data < node.data:
+            node.left = self.remove(node.left,data)
+        elif data > node.data:
+            node.right = self.remove(node.right,data)
+        else:
+            if not node.left and node.right is None:
+                node = None
+                return node
+            if node.left is None:
+                temp = node.right
+                node = None
+                return temp
+            elif node.right is None:
+                temp = node.left
+                node = None
+                return temp
+            temp = self.get_minimum(node.right)
+            node.data = temp.data
+            node.right = self.remove(node.right,temp.data)
+            
+        return node
+                
+        
+        
     
 bst = BinarySearchTree()
 
@@ -64,7 +90,8 @@ bst.insert(5)
 bst.insert(6)
 bst.insert(7)
 
-# print(bst.contains(40))
+bst.remove(bst.root,6)
+print(bst.contains(6))
 # print(bst.contains(25))
 
 bst.pre_order_traversal(bst.root)
