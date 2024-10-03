@@ -1,3 +1,5 @@
+import math
+
 class Node:
     def __init__(self,item):
         self.data = item
@@ -42,7 +44,13 @@ class BinarySearchTree:
     def in_order(self):
         self.in_order_helper(self.root)
         
-                    
+    def post_order_traversal(self, root):
+        if root is None:
+            return 
+        self.post_order_traversal(root.left)
+        self.post_order_traversal(root.right)
+        print(root.data,end=" ->  ")
+
     def contains(self,data):
         current_node = self.root
         while current_node is not None:
@@ -85,6 +93,20 @@ class BinarySearchTree:
             
         return node
                 
+    def find_closest(self,target):
+        current = self.root
+        closest = current.data
+        while current is not None:
+            if abs(target - closest) > abs(target -current.data):
+                closest = current.data
+                
+            if target < current.data:
+                current = current.left
+            elif target > current.data:
+                current = current.right
+            else:
+                break
+        return closest
         
         
     
@@ -103,5 +125,11 @@ bst.remove(bst.root,6)
 # print(bst.contains(25))
 
 bst.in_order()
-
+# print("\n")
+bst.post_order_traversal(bst.root)
+print("\n")
 # bst.pre_order_traversal(bst.root)
+
+bst.pre_order_traversal(bst.root)
+
+# print(bst.find_closest(6))
