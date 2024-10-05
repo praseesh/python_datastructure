@@ -28,6 +28,7 @@ class QueueTest:
         print(f"{self.front.data} Removed Successfully")
     def display(self):
         pass
-            
+
+queue = QueueTest()            
             
         
