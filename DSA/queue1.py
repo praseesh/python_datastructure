@@ -26,6 +26,8 @@ class QueueTest:
             return
         self.front = self.front.next
         print(f"{self.front.data} Removed Successfully")
+    def display(self):
+        pass
             
             
         
