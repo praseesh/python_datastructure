@@ -10,3 +10,5 @@ def merge_sort(array):
    
    return merge(sorted_left,sorted_right)
     
+def merge(left,right):
+   pass
