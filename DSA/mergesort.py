@@ -11,4 +11,6 @@ def merge_sort(array):
    return merge(sorted_left,sorted_right)
     
 def merge(left,right):
-   pass
+   result = []
+   i = 0
+   j = 0
