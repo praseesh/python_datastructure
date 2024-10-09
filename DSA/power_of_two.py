@@ -6,6 +6,5 @@ class Solution:
             if n %  2 != 0:
                 return False
             n //= 2
-        return n==1
+        return n == 1
     
-
