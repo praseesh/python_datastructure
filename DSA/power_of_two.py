@@ -8,3 +8,7 @@ class Solution:
             n //= 2
         return n == 1
     
+sol = Solution()
+print(sol.isPowerOfTwo(443))
+print(sol.isPowerOfTwo(522))
+print(sol.isPowerOfTwo(512))
