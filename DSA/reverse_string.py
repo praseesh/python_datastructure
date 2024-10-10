@@ -22,6 +22,8 @@ class Solution:
 
             left += 1
             right -= 1
+        print("Reversed String:", s)
         return s
     
 sol = Solution()
+sol.reverseString(["H","a","n","n","a","h"])
