@@ -8,3 +8,5 @@ class Solution:
 
         return i
     
+sol = Solution()
+sol.removeElement()
