@@ -9,4 +9,6 @@ class Solution:
         return i
     
 sol = Solution()
-sol.removeElement()
+arr = [3,2,2,3,5,7,5,2,3]
+value = 3
+sol.removeElement(arr,value)
