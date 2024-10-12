@@ -6,5 +6,5 @@ def palindrome(word):
     print("Its a Palindrome")
     return True
 
-word = "malayala"
+word = "malayalam"
 palindrome(word)

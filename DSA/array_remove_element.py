@@ -6,6 +6,7 @@ class Solution:
                 nums[i] = nums[j]
                 i += 1
         print("After Removal: ",i)
+        print("Array: ",nums)
         return i
     
 sol = Solution()
