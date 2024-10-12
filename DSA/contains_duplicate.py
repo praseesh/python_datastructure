@@ -10,7 +10,7 @@ class Solution:
 sol = Solution()
 print(sol.containsDuplicate([1,2,3,1]))
 
-# with less time complexity
+# With less time complexity
 
 class Solution:
     def containsDuplicate(self, nums) -> bool:
