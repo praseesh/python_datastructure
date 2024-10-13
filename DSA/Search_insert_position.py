@@ -1,4 +1,5 @@
 class Solution:
+    
     def searchInsert(self, nums, target: int) -> int:
         left = 0
         right = len(nums)-1
