@@ -13,3 +13,6 @@ class Solution:
             else:
                 right = mid - 1
         return right
+sol = Solution()
+
+print(sol.mySqrt(6))
