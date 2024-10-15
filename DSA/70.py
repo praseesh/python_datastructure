@@ -9,3 +9,4 @@ def climbing_stairs(n):
         previous = temp
     return current
 
+print(climbing_stairs(5))
