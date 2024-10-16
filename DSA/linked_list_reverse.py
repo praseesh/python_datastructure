@@ -33,7 +33,14 @@ sol = Solution()
 head = [1,2,3,4,5,6,7]
 for i in head:
     sol.append(i)
+    
 print("Original List:")
 sol.print_linked_list(sol.head)
+
 reversed_head = sol.reverseList(sol.head)
-sol.print_linked_list(sol.reverseList(reversed_head))
+print("Reversed List:")
+sol.print_linked_list(reversed_head)
+
+# reversed_head = sol.reverseList(sol.head)
+# print("Reversed List:")
+# sol.print_linked_list(reversed_head)
