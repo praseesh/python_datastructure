@@ -41,7 +41,7 @@ class LinkedList:
             curr.next = prev
             prev = curr
             curr = next_node
-            
+        return prev
     
     def insert(self, value, position):
         new_node = Node(value)
@@ -82,12 +82,12 @@ linked_list.append("4")
 linked_list.append("5")
 linked_list.append("6")
 linked_list.append("Last Linked list")
-
+print(linked_list.reverse())
 # linked_list.print()
 
 # linked_list.delete("4")
 
 # linked_list.print()
 
-linked_list.insert(10,11)
-linked_list.print()
+# linked_list.insert(10,11)
+# linked_list.print()
