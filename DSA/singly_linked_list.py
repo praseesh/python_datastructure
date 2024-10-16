@@ -33,6 +33,12 @@ class LinkedList:
             return
         
         previous.next = temp.next
+    def reverse(self, head):
+        prev = None
+        curr = head
+        while curr:
+            next_node = curr.next
+            
     
     def insert(self, value, position):
         new_node = Node(value)
