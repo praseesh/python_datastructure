@@ -41,6 +41,3 @@ reversed_head = sol.reverseList(sol.head)
 print("Reversed List:")
 sol.print_linked_list(reversed_head)
 
-# reversed_head = sol.reverseList(sol.head)
-# print("Reversed List:")
-# sol.print_linked_list(reversed_head)
