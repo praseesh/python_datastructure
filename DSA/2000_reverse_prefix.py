@@ -5,4 +5,5 @@ def reversePrefix(self, word: str, ch: str) -> str:
     return word
 
 word = "abcdefd"
+word = "abcdefd"
 reversePrefix()
