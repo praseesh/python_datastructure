@@ -7,4 +7,9 @@ def sum(a,b):
 # b = 6
 
 # n = sum(a,b)
-# print(n)
+print(n)
+def greet(name):
+    print("Hello", name)
+
+# pass argument
+greet("John")
