@@ -3,3 +3,6 @@ def reversePrefix(self, word: str, ch: str) -> str:
         if word[i] == ch:
             return word[:i + 1][::-1] + word[i + 1:]
     return word
+
+word = "abcdefd"
+reversePrefix()
