@@ -11,5 +11,4 @@ print(n)
 def greet(name):
     print("Hello", name)
 
-
 greet("John")
