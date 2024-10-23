@@ -12,7 +12,6 @@ print(rev)
 
 s = "GeeksforGeeks"
 
-# Convert the string into a list to use it as a stack
 stack = list(s)
 
 # Initialize an empty string to hold the reversed result
