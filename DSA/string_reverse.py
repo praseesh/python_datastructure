@@ -1,4 +1,4 @@
-cvs = "praseesh"
+s = "praseesh"
 
 rev = ""
 
