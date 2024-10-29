@@ -15,9 +15,7 @@ class Solution:
 cls = Solution()
 s = "hello"
 t = "hello"
-
 result = cls.isAnagram(s, t)
-
 if result:
     print("The given strings are anagrams: True")
 else:
