@@ -9,5 +9,4 @@ def fizzBuzz(n):
         else:  
             print(i)
 
-
 fizzBuzz(15)
