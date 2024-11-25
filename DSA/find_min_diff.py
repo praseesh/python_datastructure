@@ -1,8 +1,10 @@
 def find_min_diff(arr):
     n = len(arr)
+    print(n)
     sorted_array =[]
     for i in range(n):
         for j in range(0, n - i - 1):
+            print(f"{arr[j]}, {j},| {arr[i]}, {i}")
             if arr[j] > arr[j + 1]:
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
     print(arr)
