@@ -5,4 +5,7 @@ def string_occurrence(word):
             occurrence[letter] += 1
         else:
             occurrence[letter] = 1
-            
+    return occurrence
+word = "hello"
+result = string_occurrence(word)
+print(result)
