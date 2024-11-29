@@ -4,7 +4,6 @@ class Solution:
         sum_ = 0
         a = 0
         for c in range(len(s)-1, -1, -1):
-            
             if d[s[c]] >= a:
                 sum_ += d[s[c]]
             else:
