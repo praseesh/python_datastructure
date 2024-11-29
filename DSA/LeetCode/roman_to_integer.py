@@ -9,5 +9,4 @@ class Solution:
             else:
                 sum_ -= d[s[c]]
             a = d[s[c]]            
-            
         return sum_
