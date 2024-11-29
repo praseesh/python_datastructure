@@ -8,7 +8,6 @@ class Solution:
             
             if d[s[c]] >= a:
                 sum_ += d[s[c]]
-                # print(sum_)
             else:
                 sum_ -= d[s[c]]
             a = d[s[c]]            
