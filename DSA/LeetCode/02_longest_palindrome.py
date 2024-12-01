@@ -12,6 +12,8 @@ def longestPalindrome(s) :
             r += 1
         l= i
         r = i+1
+        while l >=0 and r < len(s) and s[l] == s[r]:
+            
             
         
 
