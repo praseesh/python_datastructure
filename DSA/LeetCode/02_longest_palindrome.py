@@ -19,7 +19,7 @@ def longestPalindrome(s) :
                 l -=1
                 r +=1
         
-
+    return res
 
 
 
