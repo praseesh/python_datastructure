@@ -16,7 +16,8 @@ def longestPalindrome(s) :
             if (r-l+1) >res_len:
                 res = s[l:r+1]
                 res_len = res - l + 1
-            
+                l -=1
+                r +=1
         
 
 
