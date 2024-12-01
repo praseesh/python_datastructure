@@ -10,6 +10,8 @@ def longestPalindrome(s) :
                 res_len = r-l+1
             l -= 1
             r += 1
+        l= i
+        r = i+1
             
         
 
