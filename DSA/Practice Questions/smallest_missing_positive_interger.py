@@ -8,4 +8,5 @@ def find_smallest_missing_positive(arr):
             return i + 1
     return n + 1
 arr = [3, 4, -1, 1]
+
 print(find_smallest_missing_positive(arr)) 
