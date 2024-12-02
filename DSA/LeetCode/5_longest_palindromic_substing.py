@@ -4,7 +4,7 @@ def longest_palindromic_substring(s):
             left -= 1
             right += 1
         return s[left+1:right]
-        
+    
     longest = ""
     for i in range(len(s)):
         p1 = check_palindrome(i,i)
@@ -16,5 +16,5 @@ def longest_palindromic_substring(s):
             longest = p2
     return longest
 
-s = "cbbd"
+s = "ababd"
 print(longest_palindromic_substring(s))
