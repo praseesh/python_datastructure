@@ -22,9 +22,6 @@ def longestPalindrome(s) :
     return res
 
 
-
-
-
-
 s = "babad"
 longestPalindrome(s)
+print(s[-1])
