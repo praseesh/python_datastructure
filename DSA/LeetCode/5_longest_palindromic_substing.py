@@ -7,4 +7,6 @@ def longest_palindromic_substring(s):
         
     longest = ""
     for i in range(len(s)):
-        pass
+        p1 = check_palindrome(i,i)
+        p2 = check_palindrome(i,i+1)
+        
