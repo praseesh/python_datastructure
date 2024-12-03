@@ -17,6 +17,17 @@ logging.info(f"2. answer is {a}" )
 name = 'GFG'
 logging.error('%s raised an error', name)
 
+# Creating an object
+logger = logging.getLogger()
+
+# Setting the threshold of logger to DEBUG
+logger.setLevel(logging.DEBUG)
+logger.debug("Harmless debug Message")
+logger.info("Just an information")
+logger.warning("Its a Warning")
+logger.error("Did you try to divide by zero")
+logger.critical("Internet is down")
+
 logging.debug("debug")
 logging.info("info")
 logging.warning("Warning")
