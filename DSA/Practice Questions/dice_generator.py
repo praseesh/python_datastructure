@@ -1,4 +1,5 @@
 import random
+import logging
 
 def dice_generator():
     dice_nums = ["One", "Two", "Three", "Four", "Five", "Six"]
