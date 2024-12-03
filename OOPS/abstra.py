@@ -1,12 +1,11 @@
 from abc import ABC, abstractmethod
 
-# Abstract class
 class Animal(ABC):
     @abstractmethod
     def speak(self):
         pass
 
-# Concrete classes
+
 class Dog(Animal):
     def speak(self):
         return "Woof!"
@@ -14,10 +13,8 @@ class Dog(Animal):
 class Cat(Animal):
     def speak(self):
         return "Meow!"
-
-# Using the classes
 dog = Dog()
 cat = Cat()
 
-print(dog.speak())  # Output: Woof!
-print(cat.speak())  # Output: Meow!
+print(dog.speak())  
+print(cat.speak())  
