@@ -14,7 +14,8 @@ try:
 except ZeroDivisionError as e:
     logging.error("ZeroDivisionError")
 logging.info(f"2. answer is {a}" )
-
+name = 'GFG'
+logging.error('%s raised an error', name)
 
 logging.debug("debug")
 logging.info("info")
