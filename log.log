@@ -1,4 +1,8 @@
-INFO:root:info
-WARNING:root:Warning
-ERROR:root:error
-CRITICAL:root:critical
+2024-12-03 16:47:56,825 - DEBUG - here the x is 2 
+2024-12-03 16:47:56,825 - INFO - answer is 1.0 
+2024-12-03 16:47:56,826 - INFO - 2. answer is 1.0 
+2024-12-03 16:47:56,826 - DEBUG - debug 
+2024-12-03 16:47:56,826 - INFO - info 
+2024-12-03 16:47:56,826 - WARNING - Warning 
+2024-12-03 16:47:56,826 - ERROR - error 
+2024-12-03 16:47:56,826 - CRITICAL - critical 
