@@ -8,10 +8,14 @@ def add_spaces(s, spaces):
     ans = []
     space = set(spaces)
     for i, c in enumerate(s):
-        # print(f"i: {i}, c: {c}")
         logging.info(f"i: {i}, c: {c}" )
+        if i in space:
+            ans.append(" ")
+        ans.append(c)
+        
+    return "".join(ans)
         
 s = "LeetcodeHelpsMeLearn"
 spaces = [8,13,15]
 
-add_spaces(s,spaces)
+print(add_spaces(s,spaces))
