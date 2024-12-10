@@ -27,11 +27,7 @@ if __name__ == '__main__':
         elif command[0] == "remove":
 
             List.remove(int(command[1]))
-
         elif command[0] == "sort":
-
             List.sort();
-
         else:
-
             List.reverse();
