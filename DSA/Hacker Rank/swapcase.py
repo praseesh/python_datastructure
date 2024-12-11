@@ -5,15 +5,10 @@ def swap_case(s):
     for i in s:
 
         if i.isupper() == True:
-
             string+=(i.lower())
-
         else:
-
             string+=(i.upper())
-
     return string
-
 
 if __name__ == '__main__':
     s = input()
