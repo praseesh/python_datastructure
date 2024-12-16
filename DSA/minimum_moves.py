@@ -1,6 +1,6 @@
 # minimum_moves
 
-def minMoves2(self, nums: List[int]) -> int:
+def minMoves2(nums):
     nums.sort()
     a = nums[len(nums)//2]
     print(nums)
@@ -8,5 +8,6 @@ def minMoves2(self, nums: List[int]) -> int:
     for i in range(len(nums)):
         count += abs(nums[i] - a)
     return count
-    
-minMoves2()
+
+nums = [1,10,2,9]
+minMoves2(nums)
