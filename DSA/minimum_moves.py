@@ -8,3 +8,5 @@ def minMoves2(self, nums: List[int]) -> int:
     for i in range(len(nums)):
         count += abs(nums[i] - a)
     return count
+    
+minMoves2()
