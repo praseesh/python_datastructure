@@ -4,6 +4,5 @@ def recursion(n):
     recursion(n-1)
     print(n, end=" ")
     recursion(n-1)
-    
 
 recursion(5)
