@@ -11,3 +11,5 @@ class Solution:
 
         return newprice
                 
+sol = Solution()
+ans = sol.finalPrices([8,7,9,3,6,2])
