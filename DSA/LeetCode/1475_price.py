@@ -13,3 +13,4 @@ class Solution:
                 
 sol = Solution()
 ans = sol.finalPrices([8,7,9,3,6,2])
+print(ans)
