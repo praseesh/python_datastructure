@@ -8,7 +8,6 @@ class Solution:
                     discount = prices[j]
                     break
             newprice.append(prices[i] - discount)
-
         return newprice
                 
 sol = Solution()
