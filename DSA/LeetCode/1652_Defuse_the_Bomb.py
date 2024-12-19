@@ -2,7 +2,7 @@ class Solution:
     def decrypt(self, code, k):
         n = len(code)
         for i in range(n):
-            if k==0:
+            if k == 0:
                 return [0] * n
             result = [0] * n
         for i in range(n):
