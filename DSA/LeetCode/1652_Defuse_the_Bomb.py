@@ -11,7 +11,6 @@ class Solution:
             elif k < 0:
                 result[i] = sum(code[(i - j) % n] for j in range(1, abs(k) + 1))
         return result
-            
 sol = Solution()
 code = [5,7,1,4]
 k = 3
