@@ -13,5 +13,6 @@ class Solution:
         return result
 sol = Solution()
 code = [5,7,1,4]
+
 k = 3
 sol.decrypt(code,k)
