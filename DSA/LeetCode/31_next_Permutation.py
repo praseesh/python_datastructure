@@ -14,8 +14,7 @@ class Solution:
         while nums[pivot - 1] >= nums[swap]:
             swap -= 1
         nums[pivot - 1], nums[swap] = nums[swap], nums[pivot - 1]
-
         nums[pivot:] = sorted(nums[pivot:])
-        
+
 sol = Solution()
 print(sol.nextPermutation([1, 8, 6, 2, 5, 4, 8, 3, 7]))  
