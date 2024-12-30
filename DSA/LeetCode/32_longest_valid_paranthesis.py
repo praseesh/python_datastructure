@@ -14,3 +14,7 @@ class Solution:
                     max_length = max(max_length, i - stack[-1])  
 
         return max_length
+    
+sol = Solution()
+s = "()()))()()((())()))(()))"
+print(sol.longestValidParentheses(s))
