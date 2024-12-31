@@ -52,13 +52,11 @@ class InventoryItem:
     
     def __gte__(self,other):
         pass
-
-# Create some inventory items
+    
 item1 = InventoryItem("Apple", 50)
 item2 = InventoryItem("Apple", 30)
 item3 = InventoryItem("Orange", 20)
 
-# Adding quantities of the same item
 result_add = item1 + item2
 print(result_add)
 
