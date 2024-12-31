@@ -12,6 +12,5 @@ class Countdown:
             return value
         else:
             raise StopIteration
-        
 for num in Countdown(5):
     print(num)
