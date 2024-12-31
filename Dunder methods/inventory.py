@@ -46,8 +46,10 @@ class InventoryItem:
         if isinstance(other, InventoryItem) and self.name == other.name:
             return self.quantity > other.quantity
         raise ValueError("Cannot compare items of different types.")
+    
     def __lte__(self,other):
         pass
+    
     def __gte__(self,other):
         pass
 
