@@ -48,6 +48,8 @@ class InventoryItem:
         raise ValueError("Cannot compare items of different types.")
     def __lte__(self,other):
         pass
+    def __gte__(self,other):
+        pass
 
 # Create some inventory items
 item1 = InventoryItem("Apple", 50)
