@@ -60,8 +60,6 @@ item3 = InventoryItem("Orange", 20)
 result_add = item1 + item2
 print(result_add)
 
-print(item1>item2)
-
 try:
     result_invalid = item1 + item3
 except ValueError as e:
