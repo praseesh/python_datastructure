@@ -1,10 +1,10 @@
-def getArray(array, n):
+def get_array(array, n):
     for i in range(n):
         value = int(input(f"Enter the Value {i+1}:  "))
         array.append(value)
-    displayArray(array,n)
+    display_array(array,n)
     
-def displayArray(array,n):
+def display_array(array,n):
     print("\nThe Entered Array is :\n")
     for i in range(n):
         print(array[i], end=" ")
@@ -12,4 +12,4 @@ def displayArray(array,n):
 array = []
 n = int(input("Enter the  size of the Array: "))
 
-getArray(array, n)
+get_array(array, n)
