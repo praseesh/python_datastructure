@@ -23,6 +23,5 @@ def main():
     array = TwoDArray(rows, cols)
     array.getArray()
     array.displayArray()
-
 if __name__ == "__main__":
     main()
