@@ -11,7 +11,6 @@ def tax_calculate(i):
     else:
         print("Out of Range")
     return tax
-
 ai = int(input("Enter Your Annual Income: "))
 tax = tax_calculate(ai)
 print(f"Your annual Tax is : {tax}")
