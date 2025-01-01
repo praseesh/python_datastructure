@@ -6,7 +6,7 @@ for i in range(n):
         value = int(input(f"Enter the Array Values [{i}][{j}]: "))
         rows.append(value)
     array.append(rows)
-print("First Array Completed...!!! ")
+print("First Array Completed... ")
 
 
 array2 = []
