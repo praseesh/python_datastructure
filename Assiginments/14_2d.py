@@ -7,7 +7,6 @@ for i in range(n):
         rows.append(value)
     array.append(rows)
 print("First Array Completed... ")
-
 array2 = []
 for i in range(n):
     row =[] 
