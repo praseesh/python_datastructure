@@ -8,12 +8,11 @@ for i in range(n):
     array.append(rows)
 print("First Array Completed... ")
 
-
 array2 = []
 for i in range(n):
     row =[] 
     for j in range(n):
-        values = int(input(f"Enter the values of Second Array [{i}] [{j}] :"))    
+        values = int(input(f"Enter values of Second Array [{i}] [{j}] :"))    
         row.append(values)
     array2.append(row)
 
