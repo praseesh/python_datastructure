@@ -7,3 +7,5 @@ def get_array():
         value = int(input(f"Enter the Array Values [{i}][{j}]: "))
         rows.append(value)
     array.append(rows)     
+    
+get_array()
