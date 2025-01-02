@@ -5,3 +5,5 @@ class Solution:
         
         A = bin(A + B)
         return A[2:]
+
+sol = Solution()
