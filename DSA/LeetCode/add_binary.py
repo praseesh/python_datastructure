@@ -1,5 +1,5 @@
 class Solution:
-    def addBinary(self, a: str, b: str) -> str:
+    def addBinary(self, a: str, b: str):
         A = int(a, 2)
         B = int(b, 2)
         A = bin(A + B)
