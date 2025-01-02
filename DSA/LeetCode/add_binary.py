@@ -7,6 +7,7 @@ class Solution:
         return A[2:]
 
 sol = Solution()
+
 a = "1010"
 b = "1011"
 s = sol.addBinary(a,b)
