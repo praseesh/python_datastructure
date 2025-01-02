@@ -9,4 +9,5 @@ class Solution:
 sol = Solution()
 a = "1010"
 b = "1011"
-sol.addBinary(a,b)
+s = sol.addBinary(a,b)
+print(s)
