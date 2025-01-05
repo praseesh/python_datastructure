@@ -1,4 +1,3 @@
-# Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -36,3 +35,4 @@ class Solution:
                 new_head.next.next = ListNode(n)
             new_head = new_head.next
         return A.next
+sol = Solution()
