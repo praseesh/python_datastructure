@@ -2,41 +2,58 @@ class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
-        head1, head2 = l1, l2
-        if head1 is None:
-            return head2
-        if head2 is None:
-            return head1
-        A, n = ListNode(0), 0
-        new_head = A
-        while (head1 != None) or (head2 != None):
-            if head1 is None:
-                m = head2.val + int(n)
-                n = 0
-                head2 = head2.next
-            elif head2 is None:
-                m = head1.val + int(n)
-                n = 0
-                head1 = head1.next
-            else:
-                m = head1.val + head2.val + int(n)
-                n = 0
-                head1 = head1.next
-                head2 = head2.next
-            m = str(m)
-            if len(m) > 1:
-                n = m[0]
-                new_head.next = ListNode(m[1])
-            else:
-                new_head.next = ListNode(m)
-            if ((head1 and head2) == None) and len(m) > 1:
-                new_head.next.next = ListNode(n)
-            new_head = new_head.next
-        return A.next
+        # Initialize the dummy node and the carry variable
+        dummy = ListNode(0)
+        current = dummy
+        carry = 0
+        
+        # Traverse both lists
+        while l1 is not None or l2 is not None or carry:
+            # Get the value of the current nodes or 0 if the node is None
+            val1 = l1.val if l1 is not None else 0
+            val2 = l2.val if l2 is not None else 0
+            
+            # Calculate the sum and the carry
+            total = val1 + val2 + carry
+            carry = total // 10
+            current.next = ListNode(total % 10)
+            
+            # Move the pointers forward
+            current = current.next
+            if l1 is not None:
+                l1 = l1.next
+            if l2 is not None:
+                l2 = l2.next
+        
+        return dummy.next
+
+# Helper function to convert a list to a ListNode linked list
+def list_to_linkedlist(lst):
+    dummy = ListNode(0)
+    current = dummy
+    for num in lst:
+        current.next = ListNode(num)
+        current = current.next
+    return dummy.next
+
+# Helper function to print the linked list
+def print_linkedlist(node):
+    result = []
+    while node:
+        result.append(str(node.val))
+        node = node.next
+    print(" -> ".join(result))
+
+# Create linked lists for l1 = [2, 4, 3] and l2 = [5, 6, 4]
+l1 = list_to_linkedlist([2, 4, 3])
+l2 = list_to_linkedlist([5, 6, 4])
+
+# Call the function
 sol = Solution()
-l1 = [2,4,3]
-l2 = [5,6,4]
-s = sol.addTwoNumbers(l1,l2)
-print(s)
+result = sol.addTwoNumbers(l1, l2)
+
+# Print the result
+print_linkedlist(result)
