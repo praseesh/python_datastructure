@@ -5,3 +5,4 @@ num1 = "123"
 num2 = "456"
 
 sol =Solution()
+print(sol.multiply(num1,num2))
