@@ -1,4 +1,5 @@
 import logging
+
 logging.basicConfig(level=logging.DEBUG,
                     filename="new_log.log",
                     filemode="w",
