@@ -1,6 +1,5 @@
 a = "abcdefghijklmnopqrstuvwxyz"
 def print_rangoli(size):
-    
     lines = []
     for row in range(size):
         print_ = "-".join(a[row:size])
