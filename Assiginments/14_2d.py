@@ -8,6 +8,8 @@ for i in range(n):
     array.append(rows)
 print("First Array Completed... ")
 array2 = []
+
+
 for i in range(n):
     row =[] 
     for j in range(n):
