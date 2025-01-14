@@ -26,6 +26,7 @@ for i in range(n):
      
 print("Sum of 2 arrays is: ")
 for i in sum:
+    
     for j in i:
         print(j, end=" ")
     print()
