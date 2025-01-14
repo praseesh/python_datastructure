@@ -16,7 +16,6 @@ for i in range(n):
         values = int(input(f"Enter values of Second Array [{i}] [{j}] :"))    
         row.append(values)
     array2.append(row)
-
 sum = []
 for i in range(n):
     row2 = []
