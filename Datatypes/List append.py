@@ -4,5 +4,4 @@ list1.append(5)
 
 print(list1)
 list1.insert(3,8.99)
-
 print(list1)
