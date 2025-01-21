@@ -1,4 +1,5 @@
 class Solution:
+    
     def mySqrt(self, x: int) -> int:
         if x==0 or x==1:
             return x
@@ -14,5 +15,4 @@ class Solution:
                 right = mid - 1
         return right
 sol = Solution()
-
 print(sol.mySqrt(6))
