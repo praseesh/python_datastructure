@@ -6,7 +6,6 @@ class Queue:
     def __init__(self):
         self.front = None
         self.rear = None
-    
     def enqueue(self, data):
         new_node = Node(data)
         if self.rear is  None:
